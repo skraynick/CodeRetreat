@@ -19,5 +19,14 @@ public class CellTest {
         cell.setNeighbours(2);
         assertFalse(cell.cellWithLessThanTwoFirendsDies());
     }
+    
+    
+    @Test
+    public void cellWithTwoOrThreeNeighboursShouldLive() {
+        cell.setNeighbours(1);
+        assertTrue(cell.cellWithTwoOrThreeNeighboursShouldLive());
+    }
+   
+    
 
 }

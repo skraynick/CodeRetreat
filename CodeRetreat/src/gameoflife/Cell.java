@@ -25,4 +25,15 @@ public class Cell {
         this.numberOfNeighbours = numberOfNeighbours;
     }
 
+    public boolean cellWithTwoOrThreeNeighboursShouldLive() {
+        if(numberOfNeighbours == 1){
+            isAlive = true;
+        }else{
+            isAlive = false;
+        }
+        return isAlive ;
+    }
+    
+    
+
 }
